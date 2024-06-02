@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: nlb69u1ag-go-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/nlb69u1ag-go

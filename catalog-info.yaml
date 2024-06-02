@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nlb69u1ag-go-gitops
+  description: This is GitOps manifest for nlb69u1ag-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: nlb69u1ag-go
+    janus-idp.io/tekton: nlb69u1ag-go 
+    backstage.io/kubernetes-id: nlb69u1ag-go 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:nlb69u1ag-go
